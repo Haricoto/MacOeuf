@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacOeuf - v1.0.0</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Menu bar -->
+    <div class="menu-bar">
+        <div class="menu-left">
+            <!-- Logo avec un menu déroulant -->
+            <div class="menu-item" id="logo-menu">
+                <img src="assets/Appoule.png" alt="Logo" class="logo">
+                <div class="dropdown" id="logo-dropdown">
+                    <ul>
+                        <li id="open-settings">Paramètres</li>
+                        <li><a href="index.html">Éteindre</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="menu-item" id="finder">Finder</span>
+            <div class="dropdown" id="finder-menu">
+                <ul>
+                    <li>Rechercher une application</li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-right">
+            <span id="clock">12:00</span>
+        </div>
+    </div>
+
+    <!-- Background -->
+    <div class="desktop"></div>
+
+    <!-- Modale des paramètres -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-button">&times;</span>
+            <h1>Paramètres</h1>
+            <p><strong>Dernière mise à jour :</strong> 10 décembre 2024</p>
+            <p><strong>Version :</strong> v1.0.0</p>
+            <p><strong>Appoule inc</strong></p>
+            <p>Merci d'utiliser MacOeuf !</p>
+        </div>
+    </div>
+    
+</body>
+</html>

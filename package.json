@@ -1,0 +1,39 @@
+{
+  "name": "macoeuf",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --win"
+  },
+  "dependencies": {
+    "electron-updater": "^6.3.9"
+  },
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
+  },
+  "files": [
+    "dist/**/*",
+    "assets/**/*",
+    "main.js"
+  ],
+  "build": {
+    "appId": "com.macoeuf.app",
+    "productName": "MacOeuf",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/icon.ico",
+      "artifactName": "MacOeuf-installer.exe"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "Haricoto",
+      "repo": "MacOeuf",
+      "private": false
+    }
+  }
+}
